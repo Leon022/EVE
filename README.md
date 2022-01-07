@@ -1,5 +1,5 @@
 # EVE
-In this repository, code is for our paper EVE: Evil Vs Evil: Using Adversarial Examples to Against Backdoor Attack in Federated Learning
+In this repository, code is for our paper EVE: Evil vs Evil: Using Adversarial Examples to Against Backdoor Attack in Federated Learning
 
 ## Installation
 Install Python=3.6.0 and Pytorch==1.4.0
