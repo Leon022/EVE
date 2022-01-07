@@ -1,0 +1,9 @@
+python>=3.6.0
+argparse
+matplotlib
+nump
+tqdm
+sklearn
+scipy
+torchvision>=0.5.0
+torch>=1.4.0
