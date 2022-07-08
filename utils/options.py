@@ -15,7 +15,7 @@ def args_parser():
     parser.add_argument('--bs', type=int, default=64, help="test batch size")
     parser.add_argument('--lr', type=float, default=0.01, help="learning rate")
     parser.add_argument('--momentum', type=float, default=0.5, help="SGD momentum (default: 0.5)")
-    parser.add_argument('--aggregation_methods', action='store_true', default="RLR",
+    parser.add_argument('--aggregation_methods', type=str,  default="fedavg",
                         help='fedavg, geom_median, foolsgold, krum, RLR, EVE')
     parser.add_argument('--robustLR_threshold', type=int, default=3,
                         help="For RLR: break ties when votes sum to 0")
@@ -39,7 +39,7 @@ def args_parser():
     parser.add_argument('--local_ep_ba', type=int, default=10, help="the number of local backdoor epochs: E")
     parser.add_argument('--local_bs_ba', type=int, default=64, help="local backdoor batch size: B")
     parser.add_argument('--lr_ba', type=float, default=0.01, help="learning backdoor rate: lr")
-    parser.add_argument('--attack_methods', action='store_true', default="DBA",
+    parser.add_argument('--attack_methods', type=str, default="CBA",
                         help='CBA, DBA')
     parser.add_argument('--attacker_list', nargs='+', type=int, default=[2, 4, 5, 8])
     parser.add_argument('--base_label', type=int, default=-6, help="backoor base label (-1 means all labels)")
