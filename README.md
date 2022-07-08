@@ -23,7 +23,7 @@ Install Python>=3.6.0 and Pytorch>=1.4.0
 
 ### Command line tools
 ```
-python main.py --dataset mnist --model lenet5 --num_users 20 --epoch 50 --iid False --attack_start 4 --attack_methods "CBA" --attacker_list [2,5,7,9] --aggregation_methods "EVE" --detection_size 50 --gpu 0
+python main.py --dataset mnist --model lenet5 --num_users 20 --epoch 50 --iid False --attack_start 4 --attack_methods CBA --attacker_list 2 5 7 9 --aggregation_methods EVE --detection_size 50 --gpu 0
 ```
 Check out `parser.py` for the use of the arguments, most of them are self-explanatory. 
 - If you choose the backdoor method `--attack_methods` to be `DBA`, then you will also need to set the number of attackers in `--attacker_list` to 4 or a multiple of 4.
